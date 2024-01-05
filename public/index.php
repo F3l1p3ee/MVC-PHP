@@ -1,5 +1,9 @@
 <?php 
+require_once "../vendor/autoload.php";
 
-echo "Está funcionando"
+// Insstanciando a classe Route.php
+$route = new \App\Route;
+echo "Está funcionando <hr>";
+print_r($route->getUrl());
 
 ?>
