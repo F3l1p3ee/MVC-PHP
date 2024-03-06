@@ -30,7 +30,7 @@ class Route {
 
 // Método que configura quais as rotas que a aplicação possui
     public function initRoutes(){
-    // Rotas que serão capturadas pelo sistema de roteamento serão resposaveis por qual controller deverá ser chamado e qual ação deverá ser feita em função do path
+    // Rotas que serão capturadas pelo sistema de roteamento serão responsaveis por qual controller deverá ser chamado e qual ação deverá ser feita em função do path
         $routes['home'] = [
             'route' => '/',
             'controller' => 'indexController',

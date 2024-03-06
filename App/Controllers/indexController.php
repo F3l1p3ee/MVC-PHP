@@ -1,14 +1,20 @@
 <?php namespace App\Controllers;
 
-class IndexController {
- 
+use MF\Controller\Action;
+
+// Extendemos da classe Action para utilizarmos o método render
+class IndexController extends Action {
+
     public function index() {
-        echo "Estamos executando a action Index através do IndexController";
+        $this->view->dados = ["Sofá", "Cadeira", "Cama"]; // Registrando elementos do dados dentro de view
+        $this->render("index", "layout1"); // Renderizando a view Index e passando os dados
     }
 
     public function sobreNos() {
-        echo "Estamos executando a action sobreNos através do IndexController";
+        $this->view->dados = ["Notebook", "Smartphone"];
+        $this->render("sobre_nos", "layout2");
     }
+
 
 }
 
